@@ -110,7 +110,11 @@ $$x^3+8x^2+3xy+24y$$
     \item 
     {\bf 手計算による解法}
     
-    次数が小さい$y$について、降べきの順に整理すると、
+    次数が小さい
+    \large
+    $y$
+    \normalsize
+    について、降べきの順に整理すると、
     \large
     \begin{align*}
         &3xy+24y+x^3+8x^2\\
@@ -132,16 +136,24 @@ $$x^3+8x^2+3xy+24y$$
     \includegraphics[scale=0.9]{fig1-2-1.png}
     \end{center}
 \end{enumerate}
-特筆すべき点は、{\bf 手計算による解法}では、「解法」を人間が頭で考えて、そのとおりの変形を行って答えにたどり着いているのに対し、{\bf Sympyによる解法}では、
+特筆すべき点は、 
+\textcolor{magenta}
+{\bf 手計算による解法}
+では、「解法」を人間が頭で考えて、そのとおりの変形を行って答えにたどり着いているのに対し、{\bf Sympyによる解法}では、
+\textcolor{magenta}
 {\bf 「\large 
 {$x, y$}
 \normalsize
 という文字を使いますよ」}
-{\bf 「この式を因数分解してください」}と、「指示」を与えるだけで正しい答えが得られているところです。この2つの解法は、「人間がウンウン唸りながら考える」というプロセスの有無という意味で、天と地の差くらいの面倒さの違いがあります。
+{\bf 「この式を因数分解してください」}と、{\bf「指示」}を与えるだけで正しい答えが得られているところです。この2つの解法は、「人間がウンウン唸りながら考える」というプロセスの有無という意味で、天と地の差くらいの面倒さの違いがあります。
 \subsection{初等関数を扱う}
 \begin{framed}
 \begin{exq}
-次の関数$f(x)$のグラフを描画せよ。
+次の関数
+\large
+$f(x)$
+\normalsize
+のグラフを描画せよ。
 \Large
 $$f(x) = x^2e^{-x}$$
 \normalsize
@@ -162,20 +174,28 @@ $f(x)$
     \includegraphics[scale=0.5]{fig1-2-2.png}
     \end{center}    
 \end{enumerate}
-この例でも、手計算による「増減表」を用いた方法だと、かなりの大きな手間がかかります。しかし、Sympyを用いた方法は、「$x$という文字を使いますよ」「この関数のグラフ描いてくださいね」と指示を与えるだけで、非常に正確なグラフを描いてくれています。
+この例でも、手計算による「増減表」を用いた方法だと、かなりの大きな手間がかかります。しかし、Sympyを用いた方法は、
+{\bf 「\large 
+{$x$}
+\normalsize
+という文字を使いますよ」}
+{\bf 「この関数のグラフ描いてくださいね」}と指示を与えるだけで、非常に正確なグラフを描いてくれています。
 
 \subsection{方程式を解く}
 \begin{framed}
 \begin{exq}
 次の方程式の解を求めよ。
+\Large
 $$3x^3+2x^2+x+10 = 0$$
+\normalsize
 \end{exq}
 \end{framed}
 \begin{enumerate}[(i)]
     \item 
     {\bf 手計算による解法}
     
-多分これを手計算で解くには、以下の{\bf 3次方程式の解の公式}\footnote{フェラーリの公式、カルダノの公式などと呼ばれることもあります。長過ぎるのでかなり小さく記載しました。}を使うしかないでしょう(あるいは、センスのある人ならば{\bf 因数定理}で解くことも奇跡的にできるかもしれません)。
+多分これを手計算で解くには、以下の
+{\bf 3次方程式の解の公式}\footnote{フェラーリの公式、カルダノの公式などと呼ばれることもあります。長過ぎるのでかなり小さく記載しました。}を使うしかないでしょう(あるいは、センスのある人ならば{\bf 因数定理}で解くことも奇跡的にできるかもしれません)。
     \begin{center}
     \includegraphics[scale=0.5]{fig1-2-4.png}
     \end{center}    
@@ -186,12 +206,24 @@ $$3x^3+2x^2+x+10 = 0$$
     \includegraphics[scale=0.5]{fig1-2-3.png}
     \end{center}    
 \end{enumerate}
-あらあら、手計算ではまぁそう簡単には解けないだろうなという方程式でも、解が$x = -\frac53, \frac12 - \frac{\sqrt{7}}{2}i, \frac12 + \frac{\sqrt{7}}{2}i$であることが一瞬でわかってしまいました。
+あらあら、手計算ではまぁそう簡単には解けないだろうなという方程式でも、解が
+
+\large
+$x = -\frac53,  \frac12 - \frac{\sqrt{7}}{2}i,  \frac12 + \frac{\sqrt{7}}{2}i$
+\normalsize
+
+であることが一瞬でわかってしまいました。
 \subsection{微分や積分の計算}
 \begin{framed}
 \begin{exq}
-次の関数$f(x)$を微分せよ。
+次の関数
+\large
+$f(x)$
+\normalsize
+を微分せよ。
+\large
 $$f(x) = e^{ax}\sin{bx}$$
+\normalsize
 \end{exq}
 \end{framed}
 \begin{enumerate}[(i)]
@@ -199,11 +231,12 @@ $$f(x) = e^{ax}\sin{bx}$$
     {\bf 手計算による解法}
 
 積の微分法則を用いて計算する。
+\large
 \begin{align*}
     \frac{df}{dx} &= (e^{ax})'\sin{bx} + e^{ax}(\sin{bx})'\\
     &= ae^{ax}\sin{bx} + be^{ax}\cos{bx}
 \end{align*}
-
+\normalsize
     \item
     {\bf Sympyによる解法}
     \begin{center}
@@ -214,12 +247,22 @@ $$f(x) = e^{ax}\sin{bx}$$
 \subsection{ベクトル、行列、行列式に関する計算}
 \begin{framed}
 \begin{exq}
-次の行列$X$の逆行列を求めよ。ただし、$a$は定数である。
+次の行列
+\large
+$X$
+\normalsize
+の逆行列を求めよ。ただし、
+\large
+$a$
+\normalsize
+は定数である。
+\Large
 $$X=\begin{pmatrix}
 1 & -a & 0\\
 0 & 1 & -a\\
 0 & 0 & 1
 \end{pmatrix}$$
+\normalsize
 \end{exq}
 \end{framed}
 \begin{enumerate}[(i)]
