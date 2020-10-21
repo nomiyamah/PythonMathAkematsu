@@ -4,7 +4,7 @@
 \contentsline {subsection}{\numberline {1.0.3}数学を学ぶハードル(2) ～「学校での学び」の観点で～}{5}%
 \contentsline {section}{\numberline {1.1}Sympyとは？}{6}%
 \contentsline {section}{\numberline {1.2}Sympyでできること}{7}%
-\contentsline {subsection}{\numberline {1.2.1}簡単な式の計算}{7}%
+\contentsline {subsection}{\numberline {1.2.1}簡単な式の計算}{8}%
 \contentsline {subsection}{\numberline {1.2.2}初等関数を扱う}{9}%
 \contentsline {subsection}{\numberline {1.2.3}方程式を解く}{10}%
 \contentsline {subsection}{\numberline {1.2.4}微分や積分の計算}{13}%
